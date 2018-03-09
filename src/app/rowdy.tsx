@@ -9,9 +9,9 @@ const Rowdy = (props: { url: string }) => (
       <img src={props.url} />
     </div>
     <div className={styles.rowdy__bodyWrapper}>
-      <img className={styles.rowdy__leftHand} src="http://localhost:8001/assets/hand-right.gif"/>
+      <img className={styles.rowdy__leftHand} src="https://raw.githubusercontent.com/mudassir0909/rowdy/master/assets/hand-right.gif"/>
       <div className={styles.rowdy__shirt}>👕</div>
-      <img className={styles.rowdy__rightHand} src="http://localhost:8001/assets/hand-right.gif"/>
+      <img className={styles.rowdy__rightHand} src="https://raw.githubusercontent.com/mudassir0909/rowdy/master/assets/hand-right.gif"/>
     </div>
     <div className={styles.rowdy__jeans}>👖</div>
   </div>
@@ -31,13 +31,13 @@ class Store {
   get url() {
     switch (this.emotion) {
       case Emotion.NEUTRAL:
-        return 'http://localhost:8001/assets/IMG_1915.GIF';
+        return 'https://raw.githubusercontent.com/mudassir0909/rowdy/master/assets/IMG_1915.GIF';
       case Emotion.ANGRY:
-        return 'http://localhost:8001/assets/IMG_1916.GIF';
+        return 'https://raw.githubusercontent.com/mudassir0909/rowdy/master/assets/IMG_1916.GIF';
       case Emotion.SAD:
-        return 'http://localhost:8001/assets/IMG_1918.GIF';
+        return 'https://raw.githubusercontent.com/mudassir0909/rowdy/master/assets/IMG_1918.GIF';
       case Emotion.HAPPY:
-        return 'http://localhost:8001/assets/IMG_1919.GIF';
+        return 'https://raw.githubusercontent.com/mudassir0909/rowdy/master/assets/IMG_1919.GIF';
       default:
         throw new Error('Rowdy does not support this emotion yet!');
     }
