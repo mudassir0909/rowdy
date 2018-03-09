@@ -10,8 +10,15 @@ useStrict(true);
 const { Rowdy, presenter, store } = createRowdy();
 const { Projector, projectorStore } = createProjector();
 
-mobx.when(() => projectorStore.item === 'beer', () => presenter.happy(store));
-
+mobx.autorun(() => {
+  if (projectorStore.item === 'beer') {
+    presenter.happy(store);
+  } else if (projectorStore.item === 'spider') {
+    presenter.angry(store);
+  } else {
+    presenter.neutral(store);
+  }
+});
 
 // render react DOM
 export const App = hot(module)(({ history }) => (
