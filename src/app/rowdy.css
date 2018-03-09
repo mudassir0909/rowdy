@@ -1,0 +1,42 @@
+.rowdy {
+  max-width: 125px;
+}
+
+.rowdy__faceWrapper {
+  padding: 0 40px;
+  z-index: 10;
+  position: relative;
+}
+
+.rowdy__faceWrapper > img {
+  width: 40px;
+}
+
+.rowdy__bodyWrapper {
+  display: flex;
+  margin-top: -10px;
+  margin-left: -2px;
+}
+
+.rowdy__leftHand,
+.rowdy__rightHand {
+  width: 40px;
+}
+
+.rowdy__leftHand {
+  transform: rotateY(180deg) translateY(-12px) translateX(-5px);
+}
+
+.rowdy__rightHand {
+  transform: translateY(-12px) translateX(-5px);
+}
+
+.rowdy__shirt {
+  font-size: 3em;
+}
+
+.rowdy__jeans {
+  font-size: 2.8em;
+  padding-left: 39px;
+  margin-top: -17px;
+}
